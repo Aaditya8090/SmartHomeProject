@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Appliance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-bold mb-4">Add Appliance</h1>
+
+    <!-- Form to add new appliance -->
+    <form action="../../backend/appliances/add_appliance.php" method="POST" class="bg-white p-6 rounded shadow-md">
+        <label class="block text-gray-700 font-semibold">Appliance Name:</label>
+        <input type="text" name="name" required class="border p-2 w-full rounded mb-3">
+
+        <label class="block text-gray-700 font-semibold">Power Rating (kW):</label>
+        <input type="number" name="power_rating" step="0.1" required class="border p-2 w-full rounded mb-3">
+
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Add Appliance</button>
+    </form>
+
+    <br><br>
+    <div class="p-2 mx-4 flex justify-center items-center rounded-xl w-[10%] h-[10%] bg-blue-600 text-white font-semibold">
+        <a href="../../backend/dashboard.php">Dashboard</a>
+    </div>
+    <!-- <a href="control.html" class="text-blue-600 underline">Back to Appliance Control</a> -->
+</body>
+</html>

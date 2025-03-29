@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home - Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .iti {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-[url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/d13b3566818513.5b230e2773c9e.jpg')] bg-cover bg-center bg-blend-lighten bg-white/70 flex items-center justify-center min-h-screen p-8">
+    <div class="bg-white/80 rounded-3xl shadow-2xl backdrop-blur-md border border-white/30 p-8 max-w-md w-full text-center">
+        <div class="mb-4">
+            <h2 class="text-3xl font-semibold">
+                <span class="text-black">Create </span>
+                <span class="text-black">Smart Home Account</span>
+            </h2>
+        </div>
+        <p class="text-gray-600 text-sm mb-6">Effortlessly manage your home with our smart solutions.</p>
+        <form class="space-y-4" action="../../backend/auth/register.php" method="post">
+
+            <input type="text" name="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 required">
+
+            <!-- <input type="text" placeholder="Username" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400"> -->
+
+            <input type="email" name="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 required">
+
+            <input type="password" name="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 required">
+
+            <div id="phone-container">
+                <input type="tel" name="phone_no" id="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 required">
+            </div>
+
+            <input type="date" name="dob" placeholder="Enter your DOB" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400 required">
+            
+            <!-- <input type="password" placeholder="Confirm Password" class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-400"> -->
+            <div class="flex items-center justify-center">
+                <input type="checkbox" class="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-2 focus:ring-blue-500 required">
+                <label class="ml-2 text-gray-600 text-sm">I agree to the <a href="#" class="text-blue-500 font-medium hover:underline">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition font-semibold shadow-md">Sign Up</button>
+        </form>
+
+        <p class="mt-4 text-gray-600 text-sm">Already have an account? <a href="../index.html" class="text-blue-500 font-medium hover:underline">Login here</a></p>
+    </div>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "us",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+</body>
+</html>

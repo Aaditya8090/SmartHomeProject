@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-cover bg-center" style="background-image: url('https://media.istockphoto.com/id/2140491017/photo/creative-smart-home-device-with-dark-theme-infographics-shown-on-display-with-concept-icons.jpg?s=1024x1024&w=is&k=20&c=jvwv7GpqRuOEYyJb6MBC-Fs8h7Mfblrx7yaoLSbnmZ4=');">
+    <div class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 class="text-3xl font-bold text-center text-gray-700">Smart Home Login</h2>
+        <p class="text-center text-gray-500 text-sm mt-2">Monitor and control your appliances</p>
+        <form class="mt-6" action="../backend/auth/login.php" method="post">
+
+            <div>
+                <label class="block text-gray-700 text-sm font-medium">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" class="mt-2 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+            </div>
+
+            <div class="mt-4">
+                <label class="block text-gray-700 text-sm font-medium">Password</label>
+                <input type="password" name="password" placeholder="Enter your password" class="mt-2 w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+            </div>
+            
+            <button type="submit" class="mt-6 w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition font-semibold">Login</button>
+        </form>
+        <!-- <p class="mt-4 text-center text-gray-600 text-sm">Forgot password? <a href="#" class="text-indigo-500 font-medium">Reset here</a></p> -->
+        <p class="mt-2 text-center text-gray-600 text-sm">Don't have an account? <a href="./auth/register.html" class="text-indigo-500 font-medium">Sign Up</a></p>
+    </div>
+</body>
+</html>
