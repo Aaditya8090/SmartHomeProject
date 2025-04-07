@@ -8,7 +8,7 @@ date_default_timezone_set('Asia/Kolkata');
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../auth/login.php");
+    header("Location: ../../frontend/auth/login.html");
     exit();
 }
 
@@ -129,9 +129,9 @@ $result = $stmt->get_result();
                 <ul>
                     <li class="mb-4"><a href="../dashboard.php" class="text-blue-600">🏠 Dashboard</a></li>
                     <li class="mb-4"><a href="control_appliance.php" class="text-blue-600 font-bold">⚙️ Appliance Control</a></li>
-                    <li class="mb-4"><a href="appliance_usage.php" class="text-blue-600">📊 Usage Analytics</a></li>
-                    <li class="mb-4"><a href="notifications.php" class="text-blue-600">🔔 Notifications</a></li>
-                    <li class="mb-4"><a href="settings.php" class="text-blue-600">⚙️ Settings</a></li>
+                    <li class="mb-4"><a href="./usage_analytics.php" class="text-blue-600">📊 Usage Analytics</a></li>
+                    <li class="mb-4"><a href="./notification2.php" class="text-blue-600">🔔 Notifications</a></li>
+                    <li class="mb-4"><a href="./setting.php" class="text-blue-600">⚙️ Settings</a></li>
                 </ul>
             </aside>
             

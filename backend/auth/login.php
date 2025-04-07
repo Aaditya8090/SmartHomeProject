@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../dbconfig/dbconfig.php';
+include '../dbconfig/dbconfig.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user_name'] = $user['name'];
         header("Location: ../dashboard.php"); // Redirect to dashboard
     } else {
-        echo "<script>alert('Invalid Email or Password'); window.location.href='../../frontend/index.html';</script>";
+        echo "<script>alert('Invalid Email or Password'); window.location.href='../../frontend/auth/login.html';</script>";
     }
 
 

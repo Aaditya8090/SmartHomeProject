@@ -14,5 +14,12 @@ echo "Current Date and Time: " . $current_time;
 
 
 
+if ($stmt->execute()) {
+    echo "<script>alert('Saved successfully!'); window.location.href='./setting.php'; </script>";
+} else {
+    echo "<script>alert('Error'); </script>";
+}
+
+
 
 ?>

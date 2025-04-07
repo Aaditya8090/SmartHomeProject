@@ -1,14 +1,7 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+include '../dbconfig/dbconfig.php';
 
-
-require '../dbconfig/dbconfig.php';
-
-// error_log("Request method: " . $_SERVER["REQUEST_METHOD"]);
-// error_log(print_r($_POST, true));
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $name, $email, $password, $dob, $phone_no);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Registration successful! Please login.'); window.location.href='../../frontend/index.html';</script>";
+        echo "<script>alert('Registration successful! Please login.'); window.location.href='../../frontend/auth/login.html';</script>";
     } else {
         echo "<script>alert('Error: Email already exists!'); window.location.href='../../frontend/auth/register.html';</script>";
     }

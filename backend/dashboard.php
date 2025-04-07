@@ -63,9 +63,9 @@ $stmt->close();
                 <ul>
                     <li class="mb-4"><a href="dashboard.php" class="text-blue-600 font-bold">🏠 Dashboard</a></li>
                     <li class="mb-4"><a href="./appliances/control_appliance.php" class="text-blue-600">⚙️ Appliance Control</a></li>
-                    <li class="mb-4"><a href="./appliances/appliance_usage.php" class="text-blue-600">📊 Usage Analytics</a></li>
-                    <li class="mb-4"><a href="./notifications.php" class="text-blue-600">🔔 Notifications</a></li>
-                    <li class="mb-4"><a href="settings.php" class="text-blue-600">⚙️ Settings</a></li>
+                    <li class="mb-4"><a href="./appliances/usage_analytics.php" class="text-blue-600">📊 Usage Analytics</a></li>
+                    <li class="mb-4"><a href="./appliances/notification2.php" class="text-blue-600">🔔 Notifications</a></li>
+                    <li class="mb-4"><a href="./appliances/setting.php" class="text-blue-600">⚙️ Settings</a></li>
                 </ul>
             </aside>
             
