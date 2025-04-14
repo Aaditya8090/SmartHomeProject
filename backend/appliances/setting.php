@@ -117,24 +117,46 @@ $energy_budget = $budget_row['energy_budget'];
     <meta charset="UTF-8">
     <title>Settings</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-100">
     <div class="min-h-screen flex flex-col">
         <!-- Navbar -->
         <nav class="bg-blue-600 text-white p-4 flex justify-between">
-            <h1 class="text-xl font-bold">Settings</h1>
+            <h1 class="text-2xl font-bold">Settings</h1>
             <a href="../auth/logout.php" class="bg-red-500 px-4 py-2 rounded" onclick="return confirm('Are you sure you want to logout?');">Logout</a>
         </nav>
 
         <div class="flex flex-1">
             <!-- Sidebar -->
-            <aside class="w-64 bg-white shadow-md p-5">
-                <ul>
-                    <li class="mb-4"><a href="../dashboard.php" class="text-blue-600">🏠 Dashboard</a></li>
-                    <li class="mb-4"><a href="./control_appliance.php" class="text-blue-600">⚙️ Appliance Control</a></li>
-                    <li class="mb-4"><a href="./usage_analytics.php" class="text-blue-600">📊 Usage Analytics</a></li>
-                    <li class="mb-4"><a href="./notification2.php" class="text-blue-600">🔔 Notifications</a></li>
-                    <li class="mb-4"><a href="setting.php" class="text-blue-600 font-bold">⚙️ Settings</a></li>
+            <aside class="w-56 bg-white p-4 shadow">
+                <h3 class="font-bold text-gray-500 mb-4">NAVIGATION</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="../dashboard.php" class="flex items-center p-2 hover:bg-gray-100 rounded">
+                            <span class="mr-2"><i class="fa-solid fa-chart-simple"></i></span> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./control_appliance.php" class="flex items-center p-2 hover:bg-gray-100 rounded">
+                            <span class="mr-2"><i class="fa-solid fa-plug"></i></span> Appliance Control
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./usage_analytics.php" class="flex items-center p-2 hover:bg-gray-100 rounded">
+                            <span class="mr-2"><i class="fa-solid fa-chart-line"></i></span> Usage Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./notification2.php" class="flex items-center p-2 hover:bg-gray-100 rounded">
+                            <span class="mr-2"><i class="fa-solid fa-bell"></i></span> Notifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./setting.php" class="flex items-center p-2 bg-blue-100 text-blue-700 rounded font-medium">
+                            <span class="mr-2"><i class="fa-solid fa-gear"></i></span> Settings
+                        </a>
+                    </li>
                 </ul>
             </aside>
 
