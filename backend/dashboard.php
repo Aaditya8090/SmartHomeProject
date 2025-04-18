@@ -1,6 +1,6 @@
 <?php
 session_start();
-// include 'dbconfig/db_config.php';
+
 include './dbconfig/dbconfig.php';
 
 

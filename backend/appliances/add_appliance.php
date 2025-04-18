@@ -3,6 +3,7 @@ session_start();
 
 include '../dbconfig/dbconfig.php';
 
+//Check if the user is logged in 
 if (!isset($_SESSION['user_id'])) {
     die("Error: User not logged in");
 }
@@ -19,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("isd", $user_id, $name, $power_rating);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Appliance added successfully!'); window.location.href='../../frontend/appliances/add_appliance.html'; </script>";
+        echo "<script>alert('Appliance added successfully!'); window.location.href='./control_appliance.php'; </script>";
     } else {
         echo "<script>alert('Error adding in appliance'); </script>";
     }
 
-    // <br><a href='../../frontend/appliances/control.html'>Go Back</a>";
+    
 
     $stmt->close();
 }
