@@ -1,4 +1,4 @@
-## 🏠 Smart Home Management System — `README.md`
+# Smart Home Management System
 
 ## Overview
 A full-stack web application to monitor and control home devices with user interaction, built as a college project using HTML, PHP, Tailwind CSS, Laravel, and MySQL.
