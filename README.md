@@ -1,6 +1,5 @@
 ## 🏠 Smart Home Management System — `README.md`
 
-```md
 # Smart Home Management System
 
 ## Overview
